@@ -1,0 +1,38 @@
+#student-log-component {
+
+
+    & .form-container {
+		width: 40%;
+		background-color: white;
+		margin: 0 auto;
+		margin-top: 3rem;
+		box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+			rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+		border-radius: 1rem;
+
+		& .form {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 1rem;
+			padding: 2rem 3rem;
+		}
+	}
+
+	input {
+		background-color: #f8f8f8;
+		/* background-color: red !important; */
+
+		padding: 0.6rem 1rem;
+		border-radius: 1rem;
+		border: 1px solid gray;
+		width: 100%;
+	}
+
+	input:focus {
+		outline: none;
+		border: 1px solid black;
+	}
+
+
+    
+}

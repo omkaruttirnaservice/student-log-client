@@ -1,0 +1,48 @@
+#dashboard-page {
+	& nav {
+		border-bottom: 1px solid gray;
+	}
+	& .dashboard-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		& .left {
+		}
+
+		& .right {
+			display: flex;
+			justify-content: end;
+			gap: 1rem;
+
+			& .profile-container {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+
+				& img {
+					width: 29px;
+					height: 29px;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
+
+.menu-items {
+	box-shadow: 0px 10px 10px -5px #a79e9e;
+	margin-bottom: 1rem;
+
+	& .navlink {
+		font-weight: 500;
+		color: rgb(15 23 42);
+		padding: 0.2rem 0.5rem;
+		border-radius: 5px;
+	}
+
+	& .navlink.active {
+		background-color: rgba(15, 23, 42, 0.9);
+		color: white;
+	}
+}

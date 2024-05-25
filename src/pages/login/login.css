@@ -1,0 +1,101 @@
+#login-page {
+	width: 100%;
+	height: 100%;
+	font-size: 1rem;
+
+	& .form-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 4rem;
+
+		& #login-form {
+			background-color: white;
+			width: 80%;
+			max-width: 700px;
+			padding: 1rem;
+			box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+
+			border-radius: 1rem;
+
+			& h2 {
+				margin: 1rem auto;
+				text-align: center;
+			}
+
+			& .form {
+				display: flex;
+				gap: 2rem;
+
+				& .left {
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					gap: 2rem;
+
+					& input {
+						width: 100%;
+					}
+				}
+
+				& .right {
+					flex: 1;
+					border-radius: 1rem;
+					overflow: hidden;
+
+					& img {
+						width: 100%;
+						object-fit: cover;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	input {
+		background-color: #f8f8f8;
+
+		padding: 0.6rem 1rem;
+		border-radius: 1rem;
+		border: 1px solid transparent;
+	}
+
+	input:focus {
+		outline: none;
+		border: 1px solid black;
+	}
+}
+
+#login-teacher-btn {
+	padding: 0.6rem 3rem;
+	width: fit-content;
+	margin: 2rem auto;
+	border-radius: 0.5rem;
+	color: white;
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+	#login-page {
+		.form-container .right {
+			display: none;
+		}
+
+		.form-container #login-form {
+			width: 80%;
+		}
+	}
+}
+@media (max-width: 578px) {
+	#login-page {
+		.form-container .right {
+			display: none;
+		}
+
+		.form-container #login-form {
+			width: 90%;
+		}
+	}
+}
